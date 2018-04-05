@@ -1,47 +1,81 @@
-.modal {
-  background: rgba(75,227,232,1);
-  background: -moz-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(75,227,232,1)), color-stop(100%, rgba(8,240,155,1)));
-  background: -webkit-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
-  background: -o-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
-  background: -ms-linear-gradient(left, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
-  background: linear-gradient(to right, rgba(75,227,232,1) 0%, rgba(8,240,155,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4be3e8', endColorstr='#08f09b', GradientType=1 );
-  box-shadow: 2px 2px 4px #888888;
-  position: fixed;
-  top: 40%;
-  left: 35%;
-  height: 100px;
-  width: 300px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 30px;
-  text-align: left;
-  z-index: 3;
+*, *::before, *::after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.modal-title {
-  display: block;
-  font-size: 20px;
-  margin: 5px 0 5px 0;
-  width: 50%;
-}
-
-.modal-label {
-  display: block;
+html {
+  height: 100%;
   font-size: 100%;
-  margin: 5px 0 5px 0;
-  width: 90%;
 }
 
-.modal-input {
-  display: block;
-  margin: 5px 0 5px 0;
-  width: 90%;
+body {
+  font-family: "Fjord One"; serif;
+  background-color: #FCFCFC;
 }
 
-.modal-button {
-  display: inline;
-  margin: 5px 0 5px 0;
-  width: 45%;
+.nav-bar {
+  position: absolute;
+  right: 4rem;
 }
+
+.hero-content {
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  height: 5rem;
+  width: 100%;
+  background-color: #54F2F2;
+}
+
+.hero-title {
+  padding: 0 0 0 2.5rem;
+}
+
+.new-task {
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+  background-color: #5EB1BF;
+}
+
+.new-task-header {
+  padding: 1rem 0 1rem 2.5rem;
+}
+
+.new-task-field {
+  padding: 0 0 1rem 2.5rem;
+}
+
+.task-field {
+  margin: 0 2rem 0 0;
+  width: 30%
+}
+
+.task-content {
+  position: relative;
+  left: 0;
+  top: 14rem;
+  height: 100%;
+  width: 100%;
+}
+
+.task-list {
+  top: 5rem;
+  padding: 0 2.5rem 0 2.5rem;
+}
+
+.task-checkbox {
+  position: relative;
+  bottom: 0.25rem;
+  right: 0.25rem;
+}
+
+
+
+/*@media (min-width: 640px) {
+    html { font-size: 120%; }
+    .hero-content {
+      height: 4rem;
+    }
+}*/
